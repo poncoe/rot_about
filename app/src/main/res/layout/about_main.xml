@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#131313"
+    tools:context=".java.AboutActivity" >
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_tentang" />
+
+    <ScrollView
+        android:id="@+id/lytScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadeScrollbars="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:padding="10dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imgLogoAbout"
+                    android:layout_width="150dip"
+                    android:layout_height="150dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rot_icon"
+                    android:contentDescription="@+id/imgLogoAbout"
+                    android:padding="30dip" />
+
+                <!-- Informasi -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtTentang"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dip"
+                    android:gravity="center|center_vertical"
+                    android:text="\nAplikasi yang memudahkan kamu untuk mengetahui segala hal tentang sekolah SMK Telekomunikasi Telesandi Bekasi.\n\nDipublikasikan oleh Syntax Telesandi dan dibina oleh Sari Gumbira,S.Kom.\n\nSystem Analist :\nMarissa Dewi Sartika,S.Kom\n\nProgrammer :\nPoncoe\nBrendatama Akbar\n\nProgrammer Web :\nDaffa Prayodi\nRigil Makmun\n\nDatabase Development :\nZaky Hanif Testandy\nRayhan Hidayat\n\nDesainer :\nAl-Anfal Ibrahim\nLuthfir Arqam\nAnanda Musthofa\nArnelka\nLuky Hakim\n\nPhotographer :\nZay\n\nPengisi Suara VoiceOver® :\nLailatussalamah\n\nOther Our Syntax Family :\nMarcus, Yusrizal, Khalid Abdurahman, Harry Pramono, Muklis, Wikal, Paulina Retno, Khairul Annas, Ridho, Aditya Prasetyo, Aline, Fajriansyah, Andrea Jonathan, Natan Iman, Billysany Akhyar, Rio, Lainnya\n\nSpecial Thanks :\nFebriyani, A.MD, Anggara Wahyu, Farhan Hadi Lutfi, TOMCAT SQUAD, SENI MEDIA, OSIS\n\nAll rights reserved ©2015-2018\n\n"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+                <!-- Akhir Informasi -->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
